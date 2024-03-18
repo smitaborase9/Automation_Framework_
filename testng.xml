@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/prash/Repo/Git/clone/Framework_28_Nov">
+        <classes>
+            <class name="testcases.HomeTest">
+                <methods>
+                    <include name="verifyAddToCartLink"/>
+                    <include name="verifyShopLink"/>
+                    <include name="verifyTermsAndConditionsLink"/>
+                    <include name="verifyContactLink"/>
+                </methods>
+            </class>
+            <class name="testcases.LoginTest">
+                <methods>
+                    <include name="verifyLoginWithValidUserNameAndPassword"/>
+                    <include name="verifyLoginWithInvalidUserNameAndPassword"/>
+                    <include name="verifyLoginWithValidUserNameAndInvalidPassword"/>
+                    <include name="verifyLoginWithInValidUserNameAndInvalidPassword"/>
+                    <include name="verifyLoginWithoutUserNameAndInvalidPassword"/>
+                    <include name="verifyLoginWithoutUserNameAndValidPassword"/>
+                    <include name="verifyLoginWithValidUserNameAndWithoutPassword"/>
+                </methods>
+            </class>
+            <class name="testcases.LostYourPasswordTest">
+                <methods>
+                    <include name="verifyLostYourPasswordLink"/>
+                    <include name="verifyResetPasswordLinkWithValidUserName"/>
+                    <include name="verifyResetPasswordLinkWithInValidUserName"/>
+                    <include name="verifyResetPasswordFunctionalityWithoutUsername"/>
+                </methods>
+            </class>
+            <class name="testcases.MyAccountTest">
+                <methods>
+                    <include name="verifyOrdersOnTooltip"/>
+                    <include name="verifyBrowseOrdersLinkOnTooltip"/>
+                    <include name="verifyCheckboxIsEnabled"/>
+                </methods>
+            </class>
+            <class name="testcases.RegisterTest">
+                <methods>
+                    <include name="verifyRegisterHereLinkWithValidUsernameAndValidPassword"/>
+                    <include name="verifyRegisterHereLinkWithExistingInputData"/>
+                    <include name="verifyRegisterHereLinkWithValidUsernameAndInValidPassword"/>
+                    <include name="verifyRegisterHereLinkWithInvalidUsernameAndValidPassword"/>
+                </methods>
+            </class>
+            <class name="testcases.ShopTest">
+                <methods>
+                    <include name="verifyUserIsAbleSelectElementFromDropDown"/>
+                    <include name="verifyShopPage"/>
+                    <include name="verifyShopLinkIsClickable"/>
+                    <include name="verifyFiltersButton"/>
+                    <include name="VerifyShopDropdown"/>
+                    <include name="selectElementOnShopDropdown"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
